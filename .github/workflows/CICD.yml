@@ -18,7 +18,7 @@ jobs:
       - name: Clonar Repositório
         uses: actions/checkout@v3
 
-      - name: Mostra Estrutura Máquina Virtuqal
+      - name: Mostra Estrutura Máquina Virtual
         run: |
           echo "Estrutura Repositório: "
           ls -la
@@ -26,4 +26,10 @@ jobs:
       - name: Mostra Estrutura Diretório
         run: |
           echo "Estrutura Repositório: "
-          ls -la api || echo "O Repositório "api" Não Existe..."
+          ls -la api || echo "O Repositório 'api' Não Existe..."
+        
+      - name: Saida Direta Github Context
+        run: |
+          echo "Github Context: " > github_context.txt
+          echo "${{ toJSON(github) }}" .. github_context.txt
+          cat github_context.txt

@@ -15,5 +15,15 @@ jobs:
   information:
     runs-on: ubuntu-latest
     steps:
+      - name: Clonar Repositório
+        uses: actions/checkout@v3
+
+      - name: Mostra Estrutura Máquina Virtuqal
+        run: |
+          echo "Estrutura Repositório: "
+          ls -la
+      
       - name: Mostra Estrutura Diretório
-        run: ls -la
+        run: |
+          echo "Estrutura Repositório: "
+          ls -la api || echo "O Repositório "api" Não Existe..."

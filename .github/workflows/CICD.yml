@@ -1,0 +1,19 @@
+# Worflow Do Projeto
+name: CICD
+on:
+  push:
+    branches: [ main, dev ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Ambiente CICD
+        type: choice
+        required: true
+        default: dev
+        options: [ main, dev ]
+jobs:
+  information:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostra Estrutura Diretório
+        run: ls -la

@@ -1,0 +1,22 @@
+{
+  "name": "engsistemas",
+  "version": "1.0.0",
+  "description": "Estudo Integração E Desenvolvimento Continuo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelOliveira22/engSistemas.git"
+  },
+  "keywords": [
+    "cicd"
+  ],
+  "author": "queijozz_",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/MiguelOliveira22/engSistemas/issues"
+  },
+  "homepage": "https://github.com/MiguelOliveira22/engSistemas#readme"
+}
